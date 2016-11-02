@@ -44,7 +44,7 @@ class ModalPlayerViewController: UIViewController {
     
     deinit
     {
-        NotificationCenter.default.removeObserver(self, forKeyPath: NSNotification.Name.AVPlayerItemDidPlayToEndTime.rawValue)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
         
     }
 
